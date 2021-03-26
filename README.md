@@ -1,6 +1,6 @@
-# Photux
+# Photux 🖼️🐧
 
-🖼️ Uma aplicação que realiza o cálculo e processamento de imagem em C usando o OpenGL + GLUT para a disciplina de Estruturas de Dados na UFES
+Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLUT para a disciplina de Estruturas de Dados da UFES
 
 ## Filtros/Algoritmos
 
@@ -44,21 +44,27 @@
  - OpenGL
  - GLUT
 
-## Instação do freeglut3-dev
+## Execução
+
+#### Instalação do freeglut3-dev
 
 ```$ sudo apt-get install freeglut3-dev```
 
-## Execução [src/]
+#### Run [src/]
 
 ```$ make && make run```
 
-## Checar memory leaks [valgrind/]
+#### Checar memory leaks [valgrind/]
 
 ```$ make && make memcheck```
 
-## Limpar arquivos .o [src/] [valgrind/]
+#### Limpar arquivos .o [src/] [valgrind/]
  
 ```$ make clean```
+
+## OS Suporte
+
+Linux
 
 ## Autor
 
