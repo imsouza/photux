@@ -31,7 +31,7 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 ![Escala de cinza](https://imgur.com/mDzxAdl.png)
 
 ##### Filtro de Sobel:
-![Filtro de Sobel](https://imgur.com/APjZ1RA.png)
+![Filtro de Sobel](https://imgur.com/zJEpvVW.png)
 
 ##### Detecção de bordas de Laplace:
 ![Detecção de bordas de Laplace](https://imgur.com/2TMpP5B.png)
