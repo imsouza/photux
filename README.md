@@ -7,6 +7,7 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 - [x] Clareamento
 - [x] Escurecimento
 - [x] Escala de cinza
+- [x] Negativo
 - [x] Filtro de Sobel
 - [x] Detecção de bordas de Laplace
 - [x] Grid
