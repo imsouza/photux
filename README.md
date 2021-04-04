@@ -19,25 +19,25 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 
 ##### Imagem original:
 
-![Imagem original](https://imgur.com/2ICEHXO.png)
+![Imagem original](https://imgur.com/Wt5IYOw.png)
 
 ##### Clareamento fator 100:
-![Clareamento fator 100](https://imgur.com/GLsIc6O.png)
+![Clareamento fator 100](https://imgur.com/uKHZz5T.png)
 
 ##### Escurecimento fator 100:
-![Escurecimento fator 100](https://imgur.com/5ov17Dn.png)
+![Escurecimento fator 100](https://imgur.com/zeyVfag.png)
 
 ##### Escala de cinza:
-![Escala de cinza](https://imgur.com/gHTm6JZ.png)
+![Escala de cinza](https://imgur.com/mDzxAdl.png)
 
 ##### Filtro de Sobel:
 ![Filtro de Sobel](https://imgur.com/APjZ1RA.png)
 
 ##### Detecção de bordas de Laplace:
-![Detecção de bordas de Laplace](https://imgur.com/n41trOr.png)
+![Detecção de bordas de Laplace](https://imgur.com/2TMpP5B.png)
 
 ##### Grid:
-![Grid](https://imgur.com/vfE3p0B.png)
+![Grid](https://imgur.com/ZiNx200.png)
 
 ## Dependências
 
