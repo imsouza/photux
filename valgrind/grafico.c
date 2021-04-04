@@ -108,7 +108,7 @@ void gerenciaTeclado (unsigned char key, int mx, int my) {
     break;
   /* Filtro: Filtro de Sobel */
   case '4':
-    AVISO(Grafico: aplicando o filtro de Sobel na imagem.);
+    AVISO(Grafico: aplicando o Filtro de Sobel na imagem.);
     copiaDaImagem = copiaImagem(imagem);
     filtroSobel(imagem);
     imagemFoiModificada = true;
@@ -118,7 +118,7 @@ void gerenciaTeclado (unsigned char key, int mx, int my) {
     break;
   /* Filtro: deteccaoBordasLaplace */
   case '5':
-    AVISO(Grafico: aplicando a detecção de bordas de Laplace na imagem.);
+    AVISO(Grafico: aplicando a Detecção de bordas de Laplace na imagem.);
     copiaDaImagem = copiaImagem(imagem);
     deteccaoBordasLaplace(imagem);
     imagemFoiModificada = true;
@@ -127,13 +127,24 @@ void gerenciaTeclado (unsigned char key, int mx, int my) {
     desenha();
     break;
   /* Filtro: grid */
-  case 'm':
-  case 'M':
+  case 'g':
+  case 'G':
     AVISO(Grafico: aplicando o filtro Grid na imagem.);
     copiaDaImagem = copiaImagem(imagem);
     grid(imagem);
     imagemFoiModificada = true;
     AVISO(Grafico: voltei da funcao grid.\n);
+    opcoes();
+    desenha();
+    break;
+  /* Filtro: negativo */
+  case 'n':
+  case 'N':
+    AVISO(Grafico: aplicando o filtro Negativo na imagem.);
+    copiaDaImagem = copiaImagem(imagem);
+    negativo(imagem);
+    imagemFoiModificada = true;
+    AVISO(Grafico: voltei da funcao negativo.\n);
     opcoes();
     desenha();
     break;
@@ -196,7 +207,8 @@ void opcoes () {
   " '3' para deixar a imagem em escala de cinza\n"
   " '4' para aplicar o filtro de Sobel\n"
   " '5' para aplicar a detecção de bordas de Laplace\n"
-  " 'm' para aplicar o grid\n"
+  " 'g' para aplicar o filtro de grid\n"
+  " 'n' para aplicar o filtro negativo\n"
   " 'o' para voltar a imagem original\n"
   " 'z' para desfazer a última modificação\n"
   " 's' para salvar a imagem atual\n"

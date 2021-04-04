@@ -53,6 +53,11 @@ int main (int argc, char *argv[]) {
   liberaImagem(imagem);
   imagem = copiaImagem(imagemOriginal);
 
+  negativo(imagem);
+  salvaImagem(imagem, "imagemNegativa.ppm");
+  liberaImagem(imagem);
+  imagem = copiaImagem(imagemOriginal);
+
   grid(imagem);
   salvaImagem(imagem, "imagemGrid.ppm");
   liberaImagem(imagem);

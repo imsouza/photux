@@ -11,6 +11,8 @@ void escalaDeCinzaImagem(Imagem *img);
 
 void filtroSobel(Imagem *img);
 
+void negativo(Imagem *img);
+
 void deteccaoBordasLaplace(Imagem *img);
 
 void grid(Imagem *img);

@@ -159,8 +159,21 @@ void deteccaoBordasLaplace (Imagem *img) {
 }
 
 
+void negativo (Imagem *img) {
+  for (int h = 0; h < obtemAltura(img); h++) {
+    for (int w = 0; w < obtemLargura(img); w++) { 
+      Pixel pixel = obtemPixel(img, h, w);                  
+      pixel.cor[RED]   = 255 - pixel.cor[RED];
+      pixel.cor[GREEN] = 255 - pixel.cor[GREEN];
+      pixel.cor[BLUE]  = 255 - pixel.cor[BLUE];
+      recolorePixel(img, h, w, pixel);
+    }   
+  }
+}
+
+
 void grid (Imagem *img) {
- int gx[3][3] = {{0, -1, 0}, {-1, 4, -1}, {0, -1, 0}};
+  int gx[3][3] = {{0, -1, 0}, {-1, 4, -1}, {0, -1, 0}};
 
   Imagem *imgC = NULL;
   imgC = copiaImagem(img);

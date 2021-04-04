@@ -39,6 +39,10 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 ##### Grid:
 ![Grid](https://imgur.com/ZiNx200.png)
 
+##### Negativo:
+![Negativo](https://imgur.com/b1cGrXU.png)
+
+
 ## Dependências
 
  - OpenGL
