@@ -1,6 +1,7 @@
- #include <stdio.h>  
+#include <stdio.h>  
 #include <stdlib.h> 
 #include <math.h>   
+#include <string.h>
 
 #include "imagem.h"
 
@@ -92,7 +93,11 @@ Imagem *carregaImagem (const char *nomeArquivo) {
   FILE *fp;
   int c;
 
-  fp = fopen(nomeArquivo, "r");
+  char dir[100] = "../imgs/";
+
+  strcat((char*)dir, nomeArquivo);
+
+  fp = fopen(dir, "r");
 
   if (fp == NULL) {
     fprintf(stderr, "Nao foi possivel abrir o arquivo %s\n", nomeArquivo);
@@ -163,8 +168,12 @@ void salvaImagem (Imagem *img, const char *nomeArquivo) {
   FILE *arquivo;
 
   int c, rgb_comp_color;
+ 
+  char dir[100] = "../results/";
 
-  arquivo = fopen(nomeArquivo, "w");
+  strcat((char*)dir, nomeArquivo);
+
+  arquivo = fopen(dir, "w");
 
   if (arquivo == NULL) {
     fprintf(stderr, "salvaImagem: ERRO: arquivo '%s' nao pode ser criado\n", nomeArquivo);

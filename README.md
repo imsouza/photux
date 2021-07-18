@@ -14,6 +14,8 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 
 ## Arquivo de entrada
 
+> Adicione novas imagens para teste na pasta [/imgs]
+
 <img>.ppm P3
 
 ## Resultados
@@ -55,15 +57,11 @@ Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLU
 
 ```$ sudo apt-get install freeglut3-dev```
 
-#### Run [src/]
+#### Run
 
 ```$ make && make run```
 
-#### Checar memory leaks [valgrind/]
-
-```$ make && make memcheck```
-
-#### Limpar arquivos .o [src/] [valgrind/]
+#### Limpar arquivos .o
  
 ```$ make clean```
 
