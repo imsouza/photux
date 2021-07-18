@@ -1,4 +1,4 @@
-# Photux 🖼️🐧
+# Photux 🖼️
 
 Uma aplicação que realiza o processamento de imagem em C usando o OpenGL + GLUT para a disciplina de Estruturas de Dados da UFES
 
